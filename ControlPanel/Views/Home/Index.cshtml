@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p class="lead">Upload .zip file below.</p>
+</div>
+
+
+<form name="form1" method="post" enctype="multipart/form-data" action="/Home/Post">
+    <div>
+        <label for="username">Username</label><br />
+        <input name="username" type="text" />
+    </div>
+    <div>
+        <label for="password">Password</label><br />
+        <input name="password" type="password" />
+    </div>
+    <div>
+        <label for="file">Zip File</label>
+        <input name="file" type="file" />
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+
+    @{
+        string message = TempData["Message"] as string;
+        if (message != null)
+        {
+            <div>@message</div>
+        }
+    }
+</form>

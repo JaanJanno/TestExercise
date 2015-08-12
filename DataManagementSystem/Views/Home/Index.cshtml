@@ -1,0 +1,20 @@
+﻿@model IEnumerable<DataManagementSystem.Models.JSONEntry>
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>List of received JSON strings.</h2>
+
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.content)
+            </td>
+        </tr>
+    }
+
+</table>
