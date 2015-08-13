@@ -9,6 +9,8 @@ namespace DataManagementSystem.Controllers
 {
     public class HomeController : Controller
     {
+
+        // Main view - shows list of all received JSON strings.
         public ActionResult Index()
         {
             return View(JSONEntriesController.Get());

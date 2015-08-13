@@ -11,18 +11,20 @@ namespace ControlPanel.Controllers
 {
     public class HomeController : Controller
     {
+        // Main view with zip upload form.
         public ActionResult Index()
         {
             return View();
         }
 
+        // Post of the zip file upload form.
         [HttpPost]
         public ActionResult Post()
         {
             string username, password, json;
             HttpPostedFileBase file;
 
-            try
+            try // Extracting the form contents from request.
             {
                 username = Request.Form["username"];
                 password = Request.Form["password"];
@@ -34,7 +36,7 @@ namespace ControlPanel.Controllers
                 return new RedirectResult("/");
             }
 
-            try
+            try // Uploaded zip file structure interpreted to JSON.
             {
                 json = ZipParser.zipToJSONString(file);
             }
@@ -44,7 +46,10 @@ namespace ControlPanel.Controllers
                 return new RedirectResult("/");
             }
 
+            // Makes request to DataManagementSystem
             switch (RequestMaker.makeReqest(json, username, password)){
+                    // User gets a different message depending 
+                    // on the response from DataManagementSystem.
                 case 200:
                     {
                         TempData["Message"] = "Successfully sent zip";

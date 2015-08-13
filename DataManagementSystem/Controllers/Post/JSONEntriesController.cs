@@ -11,9 +11,17 @@ using DataManagementSystem.Models;
 
 namespace DataManagementSystem.Controllers
 {
+
+    /*
+     * Handles the database access for storing
+     * and retrieving received JSON strings.
+     */
+
     public class JSONEntriesController
     {
         private static JSONEntryContext db = new JSONEntryContext();
+
+        // Adds new JSON entry to database.
 
         public static void Create(string jsonString)
         {
@@ -22,6 +30,8 @@ namespace DataManagementSystem.Controllers
             db.Entries.Add(jsonEntry);
             db.SaveChangesAsync();
         }
+
+        // Lists all received JSON strings.
 
         public static List<JSONEntry> Get()
         {

@@ -6,6 +6,9 @@ using System.Web;
 
 namespace DataManagementSystem.Models
 {
+
+    // Data model for storing received JSON strings.
+
     public class JSONEntry
     {
         public int ID { get; set; }

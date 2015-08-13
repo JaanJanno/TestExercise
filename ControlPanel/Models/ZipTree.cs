@@ -5,6 +5,11 @@ using System.Web;
 
 namespace ControlPanel.Models
 {
+
+    /*
+     * Class for describing folder structure trees.
+     */
+
     public abstract class ZipTree
     {
         public string Name { get; set; }
@@ -17,6 +22,7 @@ namespace ControlPanel.Models
             this.Name = name;
         }
 
+        // Returns its info in JSON format.
         public override string ToString()
         {
             return "{\"name\":\"" + this.Name + "\"}";
@@ -35,6 +41,7 @@ namespace ControlPanel.Models
             this.folderEntries = new List<Folder>();
         }
 
+        // Returns its info in JSON format.
         public override string ToString()
         {
             string ret = "{\"name\":\"" + this.Name + "\",\"files\":[";

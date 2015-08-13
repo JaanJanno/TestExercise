@@ -27,3 +27,33 @@ C:\Users\Jaan\Documents\Visual Studio 2013\Projects\TestExercise\DataManagementS
 C:\Users\Jaan\Documents\Visual Studio 2013\Projects\TestExercise\DataManagementSystem\bin\EntityFramework.SqlServer.dll
 C:\Users\Jaan\Documents\Visual Studio 2013\Projects\TestExercise\DataManagementSystem\bin\EntityFramework.xml
 C:\Users\Jaan\Documents\Visual Studio 2013\Projects\TestExercise\DataManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\DataManagementSystem.dll.config
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\DataManagementSystem.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\DataManagementSystem.pdb
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\Antlr3.Runtime.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\EntityFramework.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Optimization.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Razor.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\WebGrease.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\EntityFramework.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Optimization.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.Razor.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\Antlr3.Runtime.pdb
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\obj\Debug\DataManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\obj\Debug\DataManagementSystem.dll
+C:\Users\jaan9\Documents\C#\TestExercise\DataManagementSystem\obj\Debug\DataManagementSystem.pdb

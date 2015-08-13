@@ -9,15 +9,48 @@ using System.Web.Configuration;
 
 namespace DataManagementSystem.Controllers.Post.Decrypt
 {
+
+    /*
+     * Class used for decrypting and encrypting strings in AES 128, ECB mode.
+     */ 
+
     public class Decrypt
     {
         private static Encoding encoding = Encoding.GetEncoding("iso-8859-1");
         private static byte[] aesKey;
 
+        // AES key is retrieved from Web.config file.
         static Decrypt() 
         {
             string keyString = WebConfigurationManager.AppSettings["aesKey"];
             aesKey = encoding.GetBytes(keyString);
+        }
+
+        public static string EncryptString(string plainText)
+        {
+            byte[] encrypted;
+
+            AesCryptoServiceProvider provider = createAesProvider();
+
+            // Create a decrytor to perform the stream transform.
+            ICryptoTransform encryptor = provider.CreateEncryptor(provider.Key, null); // null IV, because ECB mode
+
+            // Create the streams used for encryption. 
+            using (MemoryStream msEncrypt = new MemoryStream())
+            {
+                using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                {
+                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                    {
+                        //Write all data to the stream.
+                        swEncrypt.Write(plainText);
+                    }
+                    encrypted = msEncrypt.ToArray();
+                }
+            }
+            // Return the encrypted bytes from the memory stream. 
+            return encoding.GetString(encrypted);
+
         }
 
         public static string DecryptString(string str)
@@ -46,6 +79,7 @@ namespace DataManagementSystem.Controllers.Post.Decrypt
             return decrypted;
         }
 
+        // Creates a AesCryptoServiceProvider object in 128 bit ECB mode.
         private static AesCryptoServiceProvider createAesProvider()
         {
             AesCryptoServiceProvider provider = new AesCryptoServiceProvider();

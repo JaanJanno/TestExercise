@@ -17,6 +17,7 @@ namespace DataManagementSystem.Controllers
     public class PostController : Controller
     {   
 
+        // Retrieves posts of encrypted JSON data.
         [HttpPost]
         public HttpStatusCodeResult Index()
         {
@@ -31,6 +32,8 @@ namespace DataManagementSystem.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.Unauthorized);
         }
 
+        // Tries to save received/decrypted JSON to database.
+        // Returns true, if successful.
         private static Boolean processPost(HttpRequestBase request)
         {
             try
@@ -48,6 +51,7 @@ namespace DataManagementSystem.Controllers
             }        
         }
 
+        // Extracts the body of a request in string format.
         private static string readRequestBody(HttpRequestBase request)
         {
             string body;
